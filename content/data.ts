@@ -51,7 +51,7 @@ export const works: Work[] = [
   {
     slug: "flying-chair",
     title: "Flying Chair",
-    year: "2024",
+    year: "2020",
     images: [
       {
         src: "/works/flying-chair/01.jpg",
@@ -84,12 +84,13 @@ export const works: Work[] = [
         height: 4758,
       },
     ],
-    materials: "Steel, wood",
+    materials: "Plain Oregon Pine, Cold drawn steel bar",
+    collaboration: "Custom made fabric by KRJST studio",
   },
   {
     slug: "bench",
     title: "Bench",
-    year: "2024",
+    year: "2020",
     images: [
       {
         src: "/works/bench/01.jpg",
@@ -122,12 +123,13 @@ export const works: Work[] = [
         height: 3264,
       },
     ],
-    materials: "Wood",
+    materials: "Steamed beech, Steel profile, Hot drawn steel bar",
+    collaboration: "Custom made rope by KRJST studio",
   },
   {
     slug: "beach-chair",
     title: "Beach Chair",
-    year: "2024",
+    year: "2021",
     images: [
       {
         src: "/works/beach-chair/01.jpg",
@@ -148,12 +150,13 @@ export const works: Work[] = [
         height: 4896,
       },
     ],
-    materials: "Wood, textile",
+    materials: "Steel profile, Cold drawn steel bar, Oxidized copper",
+    collaboration: "Custom made fabric by KRJST studio",
   },
   {
     slug: "nikka",
     title: "Nikka",
-    year: "2023",
+    year: "2022",
     images: [
       {
         src: "/works/nikka/01.jpg",
@@ -186,12 +189,14 @@ export const works: Work[] = [
         height: 6000,
       },
     ],
-    materials: "Wood",
+    materials: "Patinated steel, Solidified fabric, Soja based resin. ",
+    collaboration: "Custom made fabric by KRJST studio",
+    photoCredit: "Amber Van Bossel",
   },
   {
     slug: "rslt-toga-chair",
     title: "RSLT Toga Chair",
-    year: "2023",
+    year: "2022",
     images: [
       {
         src: "/works/rslt-toga-chair/01.jpg",
@@ -224,13 +229,13 @@ export const works: Work[] = [
         height: 4896,
       },
     ],
-    materials: "Steel, fabric",
-    collaboration: "RSLT",
+    materials: "Fabric, Beech wood, Steel",
+    collaboration: "Designed and produced in collaboration with KRJST studio",
   },
   {
     slug: "kaseigan-kasei-hokage",
     title: "Kaseigan Kasei Hokage",
-    year: "2023",
+    year: "2024",
     images: [
       {
         src: "/works/kaseigan-kasei-hokage/01.jpg",
@@ -257,7 +262,10 @@ export const works: Work[] = [
         height: 4128,
       },
     ],
-    materials: "Mixed media",
+    materials: "Steel structure.",
+    collaboration:
+      "Jaquard weaving made by KRJST studio and sculpted into resin",
+    photoCredit: "Stan Huaux and Jeremy Marchant",
   },
   {
     slug: "white-fire",
@@ -283,12 +291,14 @@ export const works: Work[] = [
         height: 4087,
       },
     ],
-    materials: "Ceramic",
+    materials: "Patinated steel foot, Soja based resin ",
+    collaboration: "Solidified fabric by KRJST studio",
+    photoCredit: "Stan Huaux and Jeremy Marchant",
   },
   {
     slug: "hibiki",
     title: "Hibiki",
-    year: "2022",
+    year: "2025",
     images: [
       {
         src: "/works/hibiki/01.jpg",
@@ -321,12 +331,13 @@ export const works: Work[] = [
         height: 2400,
       },
     ],
-    materials: "Wood",
+    materials: "Patinated steel",
+    collaboration: "Jacquard weaving by KRJST studio",
   },
   {
     slug: "akashi",
     title: "Akashi",
-    year: "2022",
+    year: "2025",
     images: [
       {
         src: "/works/akashi/01.jpg",
@@ -353,12 +364,13 @@ export const works: Work[] = [
         height: 2400,
       },
     ],
-    materials: "Wood",
+    materials: "Patinated steel",
+    collaboration: "Jacquard weaving by KRJST studio",
   },
   {
     slug: "himoto-table",
     title: "Himoto Table",
-    year: "2022",
+    year: "2024",
     images: [
       {
         src: "/works/himoto-table/01.jpg",
@@ -379,12 +391,13 @@ export const works: Work[] = [
         height: 4344,
       },
     ],
-    materials: "Wood",
+    materials: "Steel, Soja based resin, Fabric",
+    collaboration: "Designed and produced in collaboration with KRJST studio",
   },
   {
     slug: "suggi",
     title: "Suggi",
-    year: "2021",
+    year: "2022",
     images: [
       {
         src: "/works/suggi/01.jpg",
@@ -417,7 +430,8 @@ export const works: Work[] = [
         height: 3512,
       },
     ],
-    materials: "Wood",
+    materials: "Patinated steel, Thermoformed plexiglass",
+    collaboration: "Jacquard weaving by KRJST studio",
   },
 ];
 
@@ -453,7 +467,7 @@ export const contactBlocks: ContactBlock[] = [
     label: "Workshop",
     lines: [
       "Zaventem Ateliers",
-      "Leuvensesteenweg 86",
+      "Fabrieksstraat 15 - 19",
       "1930 Zaventem, Belgium",
     ],
     type: "address",
@@ -470,6 +484,11 @@ export const contactBlocks: ContactBlock[] = [
   },
   {
     label: "Business",
-    lines: ["Tentoon CommV", "Bruges, Belgium"],
+    lines: [
+      "Tentoon CommV",
+      "Oude Zak 35",
+      "8000 Bruges, Belgium",
+      "BE 0719 782 065",
+    ],
   },
 ];
