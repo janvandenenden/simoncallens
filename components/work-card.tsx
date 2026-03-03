@@ -1,7 +1,10 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import type { Work } from "@/content/data";
 import { cn } from "@/lib/utils";
+import { useSwipeToggle } from "@/hooks/use-swipe-toggle";
 
 export function WorkCard({
   work,
@@ -11,6 +14,7 @@ export function WorkCard({
   featured?: boolean;
 }) {
   const [img1, img2] = work.images;
+  const { toggled, onTouchStart, onTouchEnd } = useSwipeToggle();
 
   return (
     <Link href={`/work/${work.slug}`} className="group block">
@@ -21,12 +25,18 @@ export function WorkCard({
             ? "aspect-[3/4] sm:aspect-[16/9]"
             : "aspect-[3/4]"
         )}
+        onTouchStart={onTouchStart}
+        onTouchEnd={onTouchEnd}
       >
         <Image
           src={img1.src}
           alt={img1.alt}
           fill
-          className="object-cover transition-opacity duration-500 group-hover:opacity-0"
+          className={cn(
+            "object-cover transition-opacity duration-500",
+            "lg:group-hover:opacity-0",
+            toggled && "max-lg:opacity-0"
+          )}
           sizes={
             featured
               ? "(max-width: 768px) 100vw, 1152px"
@@ -38,7 +48,11 @@ export function WorkCard({
             src={img2.src}
             alt={img2.alt}
             fill
-            className="object-cover opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+            className={cn(
+              "object-cover opacity-0 transition-opacity duration-500",
+              "lg:group-hover:opacity-100",
+              toggled && "max-lg:opacity-100"
+            )}
             sizes={
               featured
                 ? "(max-width: 768px) 100vw, 1152px"
