@@ -139,7 +139,7 @@ export default async function WorkPage({ params }: Props) {
   const count = images.length;
 
   return (
-    <PageContainer>
+    <PageContainer className="pb-6 sm:pb-16">
       {/* Mobile layout */}
       <div className="lg:hidden">
         <WorkImage {...images[0]} priority />
