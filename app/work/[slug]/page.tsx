@@ -162,7 +162,7 @@ export default async function WorkPage({ params }: Props) {
           {count >= 2 && (
             <>
               <div className="col-span-4 self-start">
-                <MetadataBlock work={work} showDetails={count <= 3} />
+                <MetadataBlock work={work} showDetails />
               </div>
               <div className="col-span-8">
                 <WorkImage {...images[1]} />
@@ -196,11 +196,8 @@ export default async function WorkPage({ params }: Props) {
                 <WorkImage {...images[2]} />
               </div>
 
-              <div className="col-span-8">
+              <div className="col-span-12">
                 <WorkImage {...images[3]} />
-              </div>
-              <div className="col-span-4 self-start">
-                <DetailsBlock work={work} />
               </div>
 
               {images.slice(4).map((img, i) => (
