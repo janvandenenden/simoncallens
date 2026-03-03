@@ -6,7 +6,7 @@ export function Footer() {
     <footer className="pb-8 pt-4">
       <div className="mx-auto max-w-6xl px-6">
         <Separator />
-        <div className="mt-4 flex flex-col gap-2 text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
+        <div className="mt-4 flex items-center justify-between text-sm text-muted-foreground">
           <span>
             &copy; {new Date().getFullYear()} {siteConfig.name}
           </span>
