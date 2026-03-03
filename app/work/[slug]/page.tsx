@@ -20,15 +20,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const work = getWorkBySlug(slug);
   if (!work) return {};
 
+  const title = `${work.title} by Simon Callens`;
+  const details = [
+    work.materials,
+    work.collaboration,
+  ].filter(Boolean);
   const description =
-    work.description ?? `${work.title} (${work.year}) by Simon Callens`;
+    work.description ??
+    `${work.title} (${work.year}) by Simon Callens.${details.length > 0 ? ` ${details.join(". ")}.` : ""}`;
   return {
     title: work.title,
     description,
     openGraph: {
-      title: work.title,
+      title,
       description,
-      images: [{ url: work.images[0].src }],
     },
   };
 }
