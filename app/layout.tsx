@@ -42,7 +42,7 @@ export default function RootLayout({
       <body
         className={`${spaceGrotesk.variable} ${spaceMono.variable} antialiased`}
       >
-        <div className="flex min-h-screen flex-col">
+        <div className="min-h-dvh flex flex-col">
           <Header />
           <main className="flex-1">{children}</main>
           <Footer />

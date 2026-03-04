@@ -12,8 +12,8 @@ const navLinks = [
 
 export function Header() {
   return (
-    <header className="pt-8 pb-4">
-      <div className="mx-auto max-w-6xl px-6">
+    <header className="">
+      <div className="mx-auto max-w-6xl px-6 my-8">
         <div className="flex items-center justify-between">
           <Link
             href="/"
@@ -41,7 +41,7 @@ export function Header() {
           </div>
         </div>
       </div>
-      <div className="mx-auto mt-4 max-w-6xl px-6">
+      <div className="mx-auto max-w-6xl px-6">
         <Separator />
       </div>
     </header>

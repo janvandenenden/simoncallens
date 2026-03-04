@@ -3,10 +3,10 @@ import { siteConfig } from "@/content/data";
 
 export function Footer() {
   return (
-    <footer className="pb-8 pt-4">
+    <footer className="">
       <div className="mx-auto max-w-6xl px-6">
         <Separator />
-        <div className="mt-4 flex items-center justify-between text-sm text-muted-foreground">
+        <div className="flex items-center my-8 justify-between text-sm text-muted-foreground">
           <span>
             &copy; {new Date().getFullYear()} {siteConfig.name}
           </span>

@@ -8,7 +8,7 @@ export function PageContainer({
   className?: string;
 }) {
   return (
-    <div className={cn("mx-auto max-w-6xl px-6 py-12 sm:py-16", className)}>
+    <div className={cn("mx-auto max-w-6xl px-6 py-12", className)}>
       {children}
     </div>
   );

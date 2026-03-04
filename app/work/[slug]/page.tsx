@@ -21,10 +21,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!work) return {};
 
   const title = `${work.title} by Simon Callens`;
-  const details = [
-    work.materials,
-    work.collaboration,
-  ].filter(Boolean);
+  const details = [work.materials, work.collaboration].filter(Boolean);
   const description =
     work.description ??
     `${work.title} (${work.year}) by Simon Callens.${details.length > 0 ? ` ${details.join(". ")}.` : ""}`;
@@ -139,7 +136,7 @@ export default async function WorkPage({ params }: Props) {
   const count = images.length;
 
   return (
-    <PageContainer className="pb-6 sm:pb-16">
+    <PageContainer className="">
       {/* Mobile layout */}
       <div className="lg:hidden">
         <WorkImage {...images[0]} priority />
@@ -223,8 +220,8 @@ export default async function WorkPage({ params }: Props) {
       )}
 
       {/* Prev/Next navigation */}
-      <Separator className="mt-8" />
-      <nav className="mt-6 flex justify-between text-sm">
+      <Separator className="mt-12" />
+      <nav className="flex justify-between text-sm mt-12">
         {prev ? (
           <Link
             href={`/work/${prev.slug}`}
